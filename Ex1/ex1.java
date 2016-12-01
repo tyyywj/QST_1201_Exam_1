@@ -15,6 +15,11 @@ public class QSTLinkList
 		}
 	}
 	private static void printLinkList(Node head) {
+		System.out.print(head.value);
+		if(null != head.next){
+			System.out.print("->");
+			printLinkList(head.next);
+		}
 	}
   
   public static void main( String[] args ){
